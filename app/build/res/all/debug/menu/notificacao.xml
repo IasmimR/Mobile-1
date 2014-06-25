@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="android.mobile.app.util.notificacao" >
+    
+    <item android:id="@+id/action_settings"
+        android:title="Configurações"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+</menu>
+<!-- From: file:/C:/Users/Henrique/workspace/Mobile/app/src/main/res/menu/notificacao.xml -->

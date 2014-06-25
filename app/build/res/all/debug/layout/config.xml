@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Configurações"
+        android:textStyle="bold"
+        android:id="@id/txtConfiguracao"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Geral"
+        android:textStyle="bold"
+        android:id="@id/txtGeral"
+        android:layout_below="@id/txtConfiguracao"
+        android:layout_alignLeft="@id/txtConfiguracao"
+        android:layout_alignStart="@id/txtConfiguracao"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="UFG"
+        android:id="@id/txtUFG"
+        android:layout_below="@id/txtGeral"
+        android:layout_toRightOf="@id/txtCurso"
+        android:layout_marginTop="10dp" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@id/switchUFG"
+        android:layout_alignBottom="@id/txtUFG"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Curso"
+        android:id="@id/txtCurso"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/switchUFG"
+        android:layout_alignLeft="@id/txtGeral"
+        android:layout_alignStart="@id/txtGeral" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Engenharia de Software"
+        android:id="@id/txtES"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/txtCurso"
+        android:layout_alignLeft="@id/txtUFG"
+        android:layout_alignStart="@id/txtUFG"
+        android:layout_marginTop="10dp"/>
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@id/switchES"
+        android:layout_alignBottom="@id/txtES"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Disciplina"
+        android:textStyle="bold"
+        android:id="@id/txtDisciplina"
+        android:layout_below="@id/txtES"
+        android:layout_alignLeft="@id/txtCurso"
+        android:layout_alignStart="@id/txtCurso"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Web"
+        android:id="@id/txtWeb"
+        android:layout_below="@id/txtDisciplina"
+        android:layout_alignLeft="@id/txtES"
+        android:layout_alignStart="@id/txtES"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Mobile"
+        android:id="@id/txtMobile"
+        android:layout_below="@id/txtWeb"
+        android:layout_alignLeft="@id/txtWeb"
+        android:layout_alignStart="@id/txtWeb"
+        android:layout_marginTop="8dp"/>
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@id/switchWeb"
+        android:layout_alignBottom="@id/txtWeb"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@id/switchMob"
+        android:layout_alignBottom="@id/txtMobile"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Integracao"
+        android:id="@id/txtIntegracao"
+        android:layout_below="@id/txtMobile"
+        android:layout_alignLeft="@id/txtMobile"
+        android:layout_alignStart="@id/txtMobile"
+        android:layout_marginTop="8dp" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@id/switchInt"
+        android:layout_alignBottom="@id/txtIntegracao"
+        android:layout_alignLeft="@id/switchMob"
+        android:layout_alignStart="@id/switchMob" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sair"
+        android:id="@id/btnSair"
+        android:textStyle="bold"
+        android:onClick="metodoSairConf"
+        android:background="@android:color/transparent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@id/switchInt"
+        android:layout_alignEnd="@id/switchInt"
+        android:textSize="15dp" />
+</RelativeLayout><!-- From: file:/C:/Users/Henrique/workspace/Mobile/app/src/main/res/layout/config.xml -->
